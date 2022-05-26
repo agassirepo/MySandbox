@@ -18,7 +18,7 @@
     </taskdef>
 	
         <!-- Deploy the unpackaged set of metadata retrieved with retrieveUnpackaged and run tests in this organization's namespace only-->
-    <target name="deployUnpackaged">
+    <target name="deploy">
       <sf:deploy username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="force-app" testLevel="RunSpecifiedTests" logtype="Detail"/>
     </target>
 
